@@ -148,7 +148,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             println!("\n📍 State: {}", state);
         }
     });
-    let query = "llm transformer";
+    let query = "multi-modal conversational agents";
     println!("🔍 Searching arXiv for '{}'", query);
     let results = arxiv_search_tool.search(query).await?;
     for (index, result) in results.iter().enumerate() {
