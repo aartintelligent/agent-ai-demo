@@ -18,6 +18,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa"
 
 [[package]]
+name = "agent-ai-demo"
+version = "0.1.0"
+dependencies = [
+ "dotenvy",
+ "quick-xml",
+ "reqwest",
+ "rig-core",
+ "serde",
+ "serde_json",
+ "thiserror 2.0.12",
+ "tokio",
+ "tracing",
+ "urlencoding",
+]
+
+[[package]]
 name = "as-any"
 version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -918,22 +934,6 @@ dependencies = [
  "serde_json",
  "thiserror 1.0.69",
  "tracing",
-]
-
-[[package]]
-name = "rig-test"
-version = "0.1.0"
-dependencies = [
- "dotenvy",
- "quick-xml",
- "reqwest",
- "rig-core",
- "serde",
- "serde_json",
- "thiserror 2.0.12",
- "tokio",
- "tracing",
- "urlencoding",
 ]
 
 [[package]]
