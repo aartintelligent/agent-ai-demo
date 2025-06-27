@@ -26,13 +26,7 @@ sélection d’articles pertinents.
 #### Format de réponse
 
 Le système retourne les résultats sous forme synthétique, en langage naturel, avec un lien cliquable vers chaque
-article, exemple :
-
-```text
-📄 Titre : Multi-Modal Dialogue Agents with Cross-Attention Architectures
-📝 Résumé : This paper explores multi-modal transformer-based agents using vision-language cross attention...
-🔗 Lien : https://arxiv.org/abs/2301.12345
-```
+article, exemple : Titre, Résumé et lien.
 
 #### Remarques
 
@@ -57,21 +51,24 @@ Processing result 1...
 
 🤖 Assistant:
 
-Le document intitulé "DAG-Net: Double Attentive Graph Neural Network for Trajectory Forecasting" traite de la
-compréhension du comportement de mouvement humain, ce qui est crucial pour des applications comme les voitures 
-autonomes ou les robots sociaux, ainsi que pour tout environnement centré sur l'humain. Le défi réside dans le
-caractère multi-modal des mouvements humains, où plusieurs trajectoires futures sont possibles à partir d'un 
-historique. De plus, ces mouvements sont souvent motivés par des objectifs, tels que atteindre un lieu particulier
-ou interagir avec l'environnement.
+Le document intitulé "DAG-Net: Double Attentive Graph Neural Network for Trajectory Forecasting" 
+traite de la compréhension du comportement de mouvement humain, ce qui est crucial pour des 
+applications comme les voitures autonomes ou les robots sociaux, ainsi que pour tout environnement 
+centré sur l'humain. Le défi réside dans le caractère multi-modal des mouvements humains, où 
+plusieurs trajectoires futures sont possibles à partir d'un historique. De plus, ces mouvements 
+sont souvent motivés par des objectifs, tels que atteindre un lieu particulier ou interagir avec 
+l'environnement.
 
-Pour aborder ces défis, les auteurs proposent un nouveau modèle génératif récurrent qui prend en compte à la fois les 
-objectifs futurs des agents individuels et leurs interactions. Ce modèle utilise un réseau de neurones graphes à double 
-attention pour recueillir des informations sur les influences mutuelles entre différents agents et les intégrer avec les 
-données concernant les objectifs futurs possibles des agents. La méthode est suffisamment générale pour être appliquée 
-à différents scénarios, et elle atteint des résultats à la pointe de la technologie dans des environnements urbains 
-ainsi que dans des applications sportives. 
+Pour aborder ces défis, les auteurs proposent un nouveau modèle génératif récurrent qui prend 
+en compte à la fois les objectifs futurs des agents individuels et leurs interactions. Ce modèle 
+utilise un réseau de neurones graphes à double attention pour recueillir des informations sur 
+les influences mutuelles entre différents agents et les intégrer avec les données concernant 
+les objectifs futurs possibles des agents. La méthode est suffisamment générale pour être appliquée
+ à différents scénarios, et elle atteint des résultats à la pointe de la technologie dans des 
+ environnements urbains ainsi que dans des applications sportives. 
 
-Pour plus d'informations, vous pouvez consulter le lien suivant : [arXiv:2005.12661v2](http://arxiv.org/abs/2005.12661v2).
+Pour plus d'informations, vous pouvez consulter le lien suivant : 
+[arXiv:2005.12661v2](http://arxiv.org/abs/2005.12661v2).
 
 📍 State: Ready
 
