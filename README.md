@@ -52,6 +52,8 @@ article, exemple : Titre, Résumé et lien.
 
 ## Execution
 
+[![Demo vidéo](https://img.youtube.com/vi/IkI-7Fj_CJ4/hqdefault.jpg)](https://www.youtube.com/watch?v=IkI-7Fj_CJ4)
+
 === Research Assistant State Machine Demo ===
 
 🔍 Searching arXiv for 'multi-modal conversational agents'
