@@ -1,6 +1,5 @@
 # 🧠 Agent AI Demo
 
-Démonstration d’un agent IA custom en Rust
 Ce projet est une démonstration technique visant à mettre en valeur mes compétences en développement d’un agent conversationnel intelligent, conçu sur mesure en Rust.
 
 Il s’agit d’un agent autonome, capable de :
@@ -53,7 +52,6 @@ article, exemple : Titre, Résumé et lien.
 
 ## Execution
 
-```text
 === Research Assistant State Machine Demo ===
 
 🔍 Searching arXiv for 'multi-modal conversational agents'
@@ -143,4 +141,3 @@ Pour plus de détails, vous pouvez consulter le lien : [Memory Sandbox sur arXiv
 📍 State: Ready
 
 === Demo Complete ===
-```
