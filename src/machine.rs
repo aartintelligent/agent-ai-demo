@@ -31,9 +31,7 @@ impl<A: Chat> ChatAgentStateMachine<A> {
             queue: VecDeque::new(),
             response_callback: None,
         };
-
         info!("Agent initialized in state: {}", machine.current_state);
-
         machine
     }
 
@@ -47,23 +45,18 @@ impl<A: Chat> ChatAgentStateMachine<A> {
     pub async fn process_message(&mut self, message: &str) -> Result<(), PromptError> {
         debug!("Enqueuing message: {}", message);
         self.queue.push_back(message.to_string());
-
         if self.current_state == AgentState::Ready {
             self.process_queue().await;
         }
-
         Ok(())
     }
 
     async fn process_queue(&mut self) {
         self.transition_to(AgentState::ProcessingQueue);
-
         while let Some(message) = self.queue.pop_front() {
             self.transition_to(AgentState::Processing);
-
             match self.process_single_message(&message).await {
                 Ok(response) => {
-                    // Handle the response (e.g., send it to the user)
                     if let Some(callback) = &self.response_callback {
                         callback(response);
                     } else {
@@ -73,14 +66,10 @@ impl<A: Chat> ChatAgentStateMachine<A> {
                 Err(e) => {
                     error!("Error processing message: {}", e);
                     self.transition_to(AgentState::Error(e.to_string()));
-                    // Decide whether to continue processing or break
-                    // For this example, we'll break on error
                     break;
                 }
             }
         }
-
-        // After processing the queue, transition back to Ready
         self.transition_to(AgentState::Ready);
     }
 
