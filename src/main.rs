@@ -6,7 +6,7 @@ use quick_xml::de::from_str;
 use reqwest;
 use rig::client::CompletionClient;
 use rig::completion::ToolDefinition;
-use rig::providers::openai::{self, GPT_4O_MINI};
+use rig::providers::ollama;
 use rig::tool::Tool;
 use serde::{Deserialize, Serialize};
 use serde_json::json;
@@ -126,11 +126,11 @@ impl Tool for ArxivSearch {
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("=== Research Assistant State Machine Demo ===\n");
     dotenvy::dotenv().ok();
-    let api_key = std::env::var("OPENAI_API_KEY").expect("OPENAI_API_KEY not found");
-    let openai_client = openai::Client::new(&api_key);
+    let ollama_host = std::env::var("OLLAMA_HOST").expect("OLLAMA_HOST not found");
+    let ollama_client = ollama::Client::from_url(&ollama_host);
     let arxiv_search_tool = ArxivSearch::new();
-    let agent = openai_client
-        .agent(GPT_4O_MINI)
+    let agent = ollama_client
+        .agent("mistral-small3.2")
         .preamble(
             "You are a helpful assistant with academic search capabilities using arXiv. \
             When provided with information about a paper, you summarize the main points \
@@ -148,7 +148,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
             println!("\n📍 State: {}", state);
         }
     });
-    let query = "multi-modal conversational agents";
+    let query = "llm agents";
     println!("🔍 Searching arXiv for '{}'", query);
     let results = arxiv_search_tool.search(query).await?;
     for (index, result) in results.iter().enumerate() {
