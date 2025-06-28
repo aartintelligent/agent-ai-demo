@@ -54,6 +54,8 @@ article, exemple : Titre, Résumé et lien.
 
 [![Demo vidéo](https://img.youtube.com/vi/IkI-7Fj_CJ4/hqdefault.jpg)](https://www.youtube.com/watch?v=IkI-7Fj_CJ4)
 
+**OpenIA + gpt-4o-mini**
+
 === Research Assistant State Machine Demo ===
 
 🔍 Searching arXiv for 'multi-modal conversational agents'
@@ -139,6 +141,112 @@ Le document intitulé "Memory Sandbox: Transparent and Interactive Memory Manage
 Actuellement, les utilisateurs n'ont pas de moyens efficaces pour visualiser et contrôler ce que l'agent se souvient, ce qui entraîne une mauvaise compréhension de la dynamique de la conversation et des interruptions dans l'interaction. Les auteurs introduisent "Memory Sandbox", un système interactif qui permet aux utilisateurs de gérer la mémoire conversationnelle des agents alimentés par LLM. En traitant les souvenirs comme des objets de données pouvant être visualisés, manipulés, enregistrés, résumés et partagés à travers les conversations, Memory Sandbox offre des fonctionnalités d'interaction pour que les utilisateurs puissent guider la perception de la conversation par l'agent.
 
 Pour plus de détails, vous pouvez consulter le lien : [Memory Sandbox sur arXiv](http://arxiv.org/abs/2308.01542v1).
+
+📍 State: Ready
+
+=== Demo Complete ===
+
+---
+
+**Ollama + mistral-small3.2**
+
+=== Research Assistant State Machine Demo ===
+
+🔍 Searching arXiv for 'llm agents'
+
+Processing result 1...
+
+📍 State: Processing Queue
+
+📍 State: Processing
+
+🤖 Assistant:
+
+**Résumé du document :**
+
+L'article intitulé "A Survey of Large Language Model Agents for Question Answering" examine les progrès réalisés dans le domaine des agents basés sur de grands modèles de langage (LLM) pour les systèmes de réponse aux questions (QA). Les agents traditionnels présentent des limites importantes, telles que des besoins en données substantiels et des difficultés à généraliser à de nouveaux environnements. Les agents basés sur les LLM surmontent ces défis en utilisant les LLM comme moteur de raisonnement central. Ces agents obtiennent de meilleurs résultats en QA par rapport aux pipelines traditionnels et aux systèmes simples de QA basés sur les LLM, grâce à leur capacité d'interaction avec des environnements externes.
+
+L'article passe en revue systématiquement la conception des agents LLM dans le contexte des tâches de QA, en organisant la discussion autour des étapes clés suivantes : planification, compréhension des questions, récupération d'informations et génération de réponses. De plus, l'article identifie les défis actuels et explore les directions de recherche futures pour améliorer les performances des systèmes de QA basés sur les agents LLM.
+
+**Lien vers l'article :** [http://arxiv.org/abs/2503.19213v1](http://arxiv.org/abs/2503.19213v1)
+
+📍 State: Ready
+
+Processing result 2...
+
+📍 State: Processing Queue
+
+📍 State: Processing
+
+🤖 Assistant:
+
+**Résumé du document :**
+
+L'article intitulé "Can LLMs Understand Social Norms in Autonomous Driving Games?" explore l'application des grands modèles de langage (LLM) pour comprendre et modéliser les normes sociales dans les jeux de conduite autonome. Les normes sociales sont définies comme des standards partagés de comportement acceptable dans une société, et leur émergence favorise la coordination entre les agents sans règles codées en dur, ce qui est crucial pour le déploiement à grande échelle des véhicules autonomes (AV) dans les systèmes de transport intelligents.
+
+Les auteurs introduisent des agents basés sur les LLM dans des jeux de conduite autonome, où ces agents prennent des décisions en fonction de prompts textuels. Le cadre de travail implique des agents basés sur les LLM jouant des jeux de Markov dans un système multi-agents (MAS), permettant d'étudier l'émergence des normes sociales parmi les agents individuels. Les auteurs visent à identifier les normes sociales en concevant des prompts et en utilisant les LLM sur des informations textuelles liées à la configuration de l'environnement et aux observations des agents basés sur les LLM.
+
+Les expériences sont menées en utilisant l'API OpenAI Chat alimentée par GPT-4.0 pour simuler des interactions et évaluer les performances des agents basés sur les LLM dans deux scénarios de conduite : une intersection non signalisée et un peloton autoroutier. Les résultats montrent que les agents basés sur les LLM peuvent gérer des environnements dynamiquement changeants dans les jeux de Markov, et que les normes sociales évoluent parmi les agents basés sur les LLM dans les deux scénarios. Dans le jeu d'intersection, les agents basés sur les LLM tendent à adopter une politique de conduite conservative lorsqu'ils sont confrontés à un potentiel accident de voiture. L'avantage des agents basés sur les LLM dans les jeux réside dans leur forte opérabilité et analysabilité, ce qui facilite la conception expérimentale.
+
+**Lien vers l'article :** [http://arxiv.org/abs/2408.12680v2](http://arxiv.org/abs/2408.12680v2)
+
+📍 State: Ready
+
+Processing result 3...
+
+📍 State: Processing Queue
+
+📍 State: Processing
+
+🤖 Assistant:
+
+**Résumé du document :**
+
+L'article intitulé "LLM Agent Honeypot: Monitoring AI Hacking Agents in the Wild" aborde la menace croissante des attaques menées par des agents basés sur de grands modèles de langage (LLM) pour la cybersécurité moderne. Pour répondre à cette préoccupation, les auteurs présentent LLM Honeypot, un système conçu pour surveiller les agents de piratage autonomes basés sur l'IA. En augmentant un honeypot SSH standard avec des techniques d'injection de prompts et d'analyse temporelle, le cadre de travail vise à distinguer les agents LLM parmi tous les attaquants.
+
+Au cours d'un déploiement d'essai d'environ trois mois dans un environnement public, les auteurs ont recueilli 8 130 731 tentatives de piratage et identifié 8 agents potentiels de l'IA. Ce travail démontre l'émergence de menaces pilotées par l'IA et leur niveau d'utilisation actuel, servant d'alerte précoce concernant les agents malveillants LLM dans la nature.
+
+**Lien vers l'article :** [http://arxiv.org/abs/2410.13919v2](http://arxiv.org/abs/2410.13919v2)
+
+📍 State: Ready
+
+Processing result 4...
+
+📍 State: Processing Queue
+
+📍 State: Processing
+
+🤖 Assistant:
+
+**Résumé du document :**
+
+L'article intitulé "The Influence of Human-inspired Agentic Sophistication in LLM-driven Strategic Reasoners" examine l'impact de la sophistication agentique inspirée de l'humain sur les raisonneurs stratégiques basés sur les grands modèles de langage (LLM). Avec l'essor rapide des LLM, la recherche en intelligence artificielle (IA) s'est tournée vers les systèmes agentiques, utilisant des notions plus faibles et plus flexibles d'agentivité. Cependant, cela soulève des questions clés sur la mesure dans laquelle les agents basés sur les LLM reproduisent le raisonnement stratégique humain, en particulier dans les contextes de théorie des jeux.
+
+Les auteurs évaluent trois conceptions d'agents : un modèle simple de théorie des jeux, un modèle LLM-as-agent non structuré, et un LLM intégré dans un cadre agentique traditionnel. En utilisant des jeux de devinettes comme banc d'essai, ils ont évalué ces agents par rapport à des participants humains en termes de motifs de raisonnement général et d'objectifs spécifiques aux rôles. De plus, ils ont introduit des scénarios de jeu obscurcis pour évaluer la capacité des agents à généraliser au-delà des distributions d'entraînement.
+
+L'analyse, couvrant plus de 2000 échantillons de raisonnement à travers 25 configurations d'agents, montre que les structures cognitives inspirées de l'humain peuvent améliorer l'alignement des agents LLM avec le comportement stratégique humain. Cependant, la relation entre la complexité de la conception agentique et la similitude avec l'humain est non linéaire, soulignant une dépendance critique aux capacités sous-jacentes des LLM et suggérant des limites à l'augmentation architecturale simple.
+
+**Lien vers l'article :** [http://arxiv.org/abs/2505.09396v1](http://arxiv.org/abs/2505.09396v1)
+
+📍 State: Ready
+
+Processing result 5...
+
+📍 State: Processing Queue
+
+📍 State: Processing
+
+🤖 Assistant:
+
+**Résumé du document :**
+
+L'article intitulé "BadAgent: Inserting and Activating Backdoor Attacks in LLM Agents" explore la vulnérabilité des agents intelligents basés sur de grands modèles de langage (LLM) aux attaques par porte dérobée. Avec l'essor des LLM, des agents puissants ont été développés pour fournir des services personnalisés avec des outils définis par l'utilisateur. Les méthodes de pointe pour construire ces agents utilisent des LLM entraînés et les affinent davantage sur des données spécifiques à la tâche de l'agent.
+
+Cependant, les auteurs montrent que ces méthodes sont vulnérables à des attaques par porte dérobée qu'ils nomment BadAgent. Ces attaques peuvent être intégrées en affinant les agents sur des données de porte dérobée. À l'heure du test, l'attaquant peut manipuler les agents LLM déployés pour exécuter des opérations nuisibles en montrant le déclencheur dans l'entrée de l'agent ou dans l'environnement. De manière surprenante, les méthodes d'attaque proposées sont extrêmement robustes, même après un affinement sur des données de confiance.
+
+Bien que les attaques par porte dérobée aient été largement étudiées dans le traitement du langage naturel, les auteurs affirment être les premiers à les étudier sur les agents LLM, qui sont plus dangereux en raison de la permission d'utiliser des outils externes. Ce travail démontre le risque clair de construire des agents LLM basés sur des LLM ou des données non fiables. Le code utilisé dans cette étude est disponible publiquement à l'adresse suivante : [https://github.com/DPamK/BadAgent](https://github.com/DPamK/BadAgent).
+
+**Lien vers l'article :** [http://arxiv.org/abs/2406.03007v1](http://arxiv.org/abs/2406.03007v1)
 
 📍 State: Ready
 
